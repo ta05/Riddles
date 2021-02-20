@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <time.h>
 using namespace std;
 
 int main() {
@@ -12,26 +13,29 @@ int main() {
         cin >> length;
     }
 
-    int boxes[length];
+    srand ( time(NULL) ); // to seed the random number
+
+    int boxes[length] = {0};
     int guess;
     int numGuess = 0;
     bool correct = false;
 
-    int position = rand() % length + 1;
+    int position = (rand() % length) + 1;
     boxes[position] = 1;
 
     do {
         cout << "\nGuess a box between " << 1 << " and " << length << ": ";
         cin >> guess;
-        while(guess <= 1 || guess > length) {
+        while(guess < 1 || guess > length) {
             cout << "Please enter a valid guess!" << endl;
             cout << "\nGuess a box between " << 1 << " and " << length << ": ";
             cin >> guess;
         }
         numGuess++;
-        if(boxes[guess - 1]) {
+        if(boxes[guess - 1] == 1) {
             cout << "\nCorrect! The cat is in box " << guess << endl;
             correct = true;
+            break;
         }
         else {
             cout << "\nWrong! The cat is not in box " << guess << endl;
