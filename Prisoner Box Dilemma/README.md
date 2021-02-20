@@ -14,10 +14,10 @@ Each prisoner randomly chooses 5 boxes.
 
 ### Box Hopper
 
-1. Each prisoner first opens the drawer with his own number.
-2. If this drawer contains his number he is done and was successful.
-3. Otherwise, the drawer contains the number of another prisoner and he next opens the drawer with this number.
-4. The prisoner repeats steps 2 and 3 until he finds his own number or has opened half the drawers.
+1. Each prisoner first opens the box with his own number.
+2. If this box contains his number he is done and was successful.
+3. Otherwise, the box contains the number of another prisoner and he next opens the box with this number.
+4. The prisoner repeats steps 2 and 3 until he finds his own number or has opened half the boxes.
 
 ## Program
 
