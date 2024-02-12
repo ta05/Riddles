@@ -10,7 +10,7 @@ The director of a prison offers 100 death row prisoners, who are numbered from 1
 
 ### No Collusion
 
-Each prisoner randomly chooses 5 boxes.
+Each prisoner randomly chooses 50 boxes.
 
 ### Box Hopper
 
